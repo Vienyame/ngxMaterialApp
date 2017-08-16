@@ -3,19 +3,24 @@ import { NgModule } from '@angular/core';
 import { MaterialModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import { AppRoutingModule } from './app.routes';
 import { CustomMaterialModuleModule } from './custom-material-module/custom-material-module.module';
+import 'hammerjs';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    CustomMaterialModuleModule
+    CustomMaterialModuleModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
