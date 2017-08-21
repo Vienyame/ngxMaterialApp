@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // APP COMPONENTS
-import { HomeComponent } from './home/index';
+import { HomeComponent } from './components/home/index';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
