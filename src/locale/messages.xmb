@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle>
+  <msg id="2193420826659428660"><source>src/app/home/home.component.ts:3,5</source>
+    Welcome to <ph name="INTERPOLATION"><ex>INTERPOLATION</ex></ph>!
+  </msg>
+  <msg id="789009380780752190"><source>src/app/home/home.component.ts:8</source>Here are some links to help you start: </msg>
+  <msg id="9169252125508909250"><source>src/app/home/home.component.ts:11</source>Tour of Heroes</msg>
+  <msg id="5474830355021798286"><source>src/app/home/home.component.ts:14</source>CLI Documentation</msg>
+  <msg id="7023829683035637619"><source>src/app/home/home.component.ts:17</source>Angular blog</msg>
+  <msg id="6097774898575286625"><source>src/app/home/home.component.ts:21,24</source>
+  Angular Material works!
+  <ph name="START_TAG_MD_ICON"><ex>&lt;md-icon&gt;</ex></ph>done<ph name="CLOSE_TAG_MD_ICON"><ex>&lt;/md-icon&gt;</ex></ph>
+</msg>
+</messagebundle>
